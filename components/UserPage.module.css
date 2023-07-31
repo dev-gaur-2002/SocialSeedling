@@ -1,0 +1,171 @@
+.userPage{
+    
+}
+
+.userInfo{
+    padding: 0 10vw;
+    display: grid;
+    grid-template-columns: 1fr 8fr; 
+    margin-top: 100px;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.userDP{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #0f0f0f;
+}
+
+.userInfo .userLocation{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: rgb(134, 134, 134);
+}
+
+
+.userStats{
+    grid-column-start: 2;
+    display: flex;
+    gap: 50px;
+}
+
+.userStat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.userStat h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.statNumber{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(134, 134, 134);
+}
+
+.statName{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(134, 134, 134);
+}
+
+
+.divider{
+    width: 100%;
+    border: 1px solid #ecedf3;
+    margin: 50px 0;
+}
+
+.userGallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}
+
+.userGallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.userGalleryImage{
+    width: 100%;
+}
+
+.userGalleryListView{
+    width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.galleryViewSwitch{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buttonSetView{
+    margin: 1em;
+    border-radius: 3px;
+    border: 1px solid #ecedf3;
+    background-color: #ebebeb;
+    padding: .4em .6em;
+    cursor: pointer;
+    color: rgb(134, 134, 134);
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
+.buttonSetView:hover{
+    background-color: #e0e0e0;
+    border: 1px solid #3586ff;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .userInfo{
+        padding: 0 5vw;
+        margin-top: 50px ;
+        grid-template-columns: 1fr 2fr; 
+        gap: 20px;
+    }
+
+    .userDP{
+        width: 26vw;
+        height: 26vw;
+    }
+
+    .userStats{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        gap: 20px;
+    }
+
+    .userStat{
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    .userStat h3{
+        font-size: 1.2rem;
+    }
+
+    .divider{
+        margin: 20px 0;
+    }
+
+
+    .userGallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+    }
+}
+    

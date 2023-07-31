@@ -1,0 +1,119 @@
+.container {
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.userInfoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
+}
+
+.profileImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #000000;
+}
+
+.userName {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.userLocation {
+    font-size: 14px;
+}
+
+.imageSection {
+    position: relative;
+}
+
+.imageContainer {
+    background-size: cover;
+    background-position: center;
+}
+
+.imageContainer.loaded>img {
+    opacity: 1;
+}
+
+.imageContainer.remove {
+    opacity: 0;
+}
+
+.imageContainer>img {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.postImage {
+    width: 100%;
+    object-position: center;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.postActionsContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    opacity: 0.5;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.postActionsContainer:hover {
+    opacity: 1;
+}
+
+.postAction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actionCounter {
+    font-size: 14px;
+}
+
+.descriptionContainer {
+    color: #000000;
+    padding: 10px 15px;
+}
+
+.descriptionUser {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.timeStamp {
+    padding: 10px 15px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        border-radius: unset;
+        margin: unset;
+    }
+}
