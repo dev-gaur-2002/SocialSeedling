@@ -7,12 +7,6 @@ https://social-seedlings123.vercel.app/
 ```
 
 
--- data chaching 
--- grid to list view 
--- responsiveness
-
-
-
 ## Features
 
 Frontend features:
